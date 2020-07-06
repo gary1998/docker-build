@@ -1,0 +1,11 @@
+os:
+  - linux
+
+services:
+  - docker
+
+before_install:
+  - git clone https://github.com/linkedin/Burrow.git && cd Burrow
+  - docker build -t gary29198/Burrow:latest .
+  - docker login -u gary29198 -p $DOCKER_PASSWORD
+  - docker push gary29198/Burrow:latest
