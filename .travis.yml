@@ -10,4 +10,4 @@ before_install:
   - docker login -u gary29198 -p 0001221149
   - docker push gary29198/burrow:latest
   - docker pull gary29198/burrow:latest
-  - docker run -it gary29198/burrow sh -c ls
+  - docker run -it gary29198/burrow sh -c run-burrow.sh
