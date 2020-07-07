@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - git clone https://github.com/gary1998/Burrow.git && cd Burrow
+  - git clone https://github.com/gary1998/Burrow.git burrow && cd burrow
   - docker build -t gary29198/burrow:latest .
   - docker login -u gary29198 -p 0001221149
   - docker push gary29198/burrow:latest
